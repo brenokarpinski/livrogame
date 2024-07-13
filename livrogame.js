@@ -3301,7 +3301,7 @@ var p401 = {
 
 function abrirPagina() {
 
-   window.location.href = 'paginainicial.html';
+   window.location.href = 'index.html';
 }
 
 
