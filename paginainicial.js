@@ -1,5 +1,5 @@
 
 
 function iniciaraventura(){
-    window.location.href = 'definirAtributos.html'
+    window.location.href = 'definiratributos.html'
 }
