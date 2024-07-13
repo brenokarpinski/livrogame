@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(101, 101, 233);
+    font: normal 20pt arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin: auto;
+
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.432);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+
+}
+
+button {
+    font-size: x-large;
+    padding: 10px;
+    margin: auto;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+input {
+    font-size: 20px;
+}
+
+
+#dadocontainer1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+        text-align: center;
+    
+}
+
+
+#imgdado1, #imgdado2, #imgdado3, #imgdado4, #imgdado5, #imgdado6 {
+    width: 100px;
+    display: block;
+    margin: auto;
+
+}

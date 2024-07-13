@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="definirAtributos.css">
+    <title>Defina Seus Atributos</title>
+</head>
+
+<body>
+
+
+    <section>
+        <h1>Defina Seus Atributos</h1>
+        <p>Antes de iniciar nossa aventura, precisamos definir alguns Atributos que serão fundamentais na jornada!</p>
+
+
+        <!--Dados para definiar habilidade-->
+        <div id="dadocontainer1">
+            <p style="font-size: 20px; font-style: italic;">Será somado 6 pontos juntos com o resultado dos dados para
+                definir habilidade.</p>
+            <div id="dado1"> <img src="0.png" alt="dado1" id="imgdado1" onclick="lancardados1()"></div>
+
+            <br>
+            <div id="habilidade">HABILIDADE:</div>
+            <br>
+        </div>
+        <br>
+        <!--.....................................................................-->
+
+
+
+
+
+        <!--Dados para definiar energia-->
+
+        <div id="dadocontainer1">
+            <p style="font-size: 20px; font-style: italic;">Será somado 12 pontos <br> juntos com o resultado dos <br>
+                dados para definir habilidade.</p> <br>
+            <div id="dado2"> <img src="0.png" alt="dado1" id="imgdado2" onclick="lancardados2()"></div>
+            <div id="dado3"> <img src="0.png" alt="dado1" id="imgdado3" onclick="lancardados3()"></div>
+            <div id="energia">ENERGIA:</div>
+        </div>
+        <br>
+        <!--.....................................................................-->
+
+
+
+
+        <!--Dados para definiar sorte-->
+        <div id="dadocontainer1">
+            <p style="font-size: 20px; font-style: italic;">Será somado 6 pontos juntos<br> com o resultado dos dados
+                para<br> definir habilidade.</p>
+            <div id="dado4"> <img src="0.png" alt="dado1" id="imgdado4" onclick="lancardados4()"></div>
+            <br>
+            <div id="sorte">SORTE:</div>
+        </div>
+        <br>
+        <!---------------------------------------------------------->
+
+
+
+        <!--......Dados para definir magia....-->
+
+
+        <div id="dadocontainer1">
+            <p style="font-size: 20px; font-style: italic;">Será somado 6 pontos <br> juntos com o resultado dos <br>
+                dados para definir magia.<br> Esse índice determina quantos Encantos Mágicos <br> você poderá usar durante <br>a sua
+                empreitada.</p> <br>
+            <div id="dado5"> <img src="0.png" alt="dado1" id="imgdado5" onclick="lancardados5()"></div>
+            <div id="dado6"> <img src="0.png" alt="dado1" id="imgdado6" onclick="lancardados6()"></div>
+            <div id="magia">MAGIA:</div>
+        </div>
+        <br>
+        <!--...................................................................................................-->
+
+
+        <button onclick="salvarAtributos()">Salvar</button>
+
+    </section>
+    <script src="definirAtributos.js"></script>
+</body>
+
+</html>

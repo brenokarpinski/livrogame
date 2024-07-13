@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de Feitiços - Encantos Mágicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #descricaoFeitico {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Escolha seus Feitiços - Encantos Mágicos</h1>
+
+    <label for="feiticoList">Selecione um feitiço:</label>
+    <select id="feiticoList">
+        <option value="copiaCriatura">Cópia de Criatura</option>
+        <option value="percepcaoExtraSensorial">Percepção Extra-Sensorial</option>
+        <!-- Adicione mais opções conforme necessário -->
+    </select>
+
+    <br>
+
+    <button onclick="mostrarDescricaoFeitico()">Selecionar Feitiço</button>
+
+    <div id="descricaoFeitico"></div>
+
+    <script>
+        function mostrarDescricaoFeitico() {
+            var selectFeitico = document.getElementById("feiticoList");
+            var feiticoSelecionado = selectFeitico.options[selectFeitico.selectedIndex].value;
+
+            // Mapeie os feitiços para suas descrições
+            var descricaoFeiticos = {
+                "copiaCriatura": "Este encanto permitirá que você faça aparecer uma réplica perfeita...",
+                "percepcaoExtraSensorial": "Com este encanto, você poderá sintonizar comprimentos de ondas psíquicas..."
+                // Adicione mais descrições conforme necessário
+            };
+
+            // Exiba a descrição do feitiço selecionado
+            document.getElementById("descricaoFeitico").innerHTML = "<p>" + descricaoFeiticos[feiticoSelecionado] + "</p>";
+        }
+    </script>
+
+</body>
+</html>

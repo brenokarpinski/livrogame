@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial - Livro jogo - A cidadela do Caos</title>
+    <link rel="stylesheet" href="livrojogo.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>LIVRO JOGO - A CIDADELA DO CAOS</h1>
+    </header>
+
+
+
+
+
+    <section>
+        <div id="containeratributos">
+
+ 
+
+            <div class="barra">
+                <div id="habilidade" class="valor">HABILIDADE:</div>
+            </div>
+            <div class="barra">
+                <div id="energia" class="valor">ENERGIA:</div>
+            </div>
+            <div class="barra">
+                <div id="sorte" class="valor">SORTE:</div>
+            </div>
+            <div class="barra">
+                <div id="magia" class="valor">MAGIA:</div>
+            </div>
+            
+         
+        </div>
+<br>
+
+
+
+        <div id="containerlista">
+            
+            <select style="height: 360px; font-size: x-large;" size="12" name="feiticos" id="feiticos"
+                onchange="mostrar(this.value)">
+
+                <option id="fsorte" value="fsorte">Sorte</option>
+                <option id="fhabilidade" value="fhabilidade">Habilidade</option>
+                <option id="fenergia" value="fenergia">Energia</option>
+                <option value="copiadecriatura" id="copiacriatura">Cópia de Criatura</option>
+                <option id="percepcao" value="percepcao">Percepção Extra-Sensorial</option>
+                <option id="fogo" value="fogo">Fogo</option>
+                <option id="ourotolos" value="ourotolos">Ouro dos Tolos</option>
+                <option id="ilusao" value="ilusao">Ilusão</option>
+                <option id="levitacao" value="levitacao">Levitação</option>
+                <option id="escudo" value="escudo">Escudo</option>
+                <option id="forca" value="forca">Força</option>
+                <option id="fraqueza" value="fraqueza">Fraqueza</option>
+
+
+            </select>
+            <br>
+            <br>
+            
+        </div>
+        
+        <div id="fescolidos">
+            <p style="font-size: small; color: #ffffff;;" id="quantidade">Itens adicionados: 0</p>
+
+            <select style="height: 400px; width: 300px; font-size: x-large;" size="16" name="feiticosescolidos"
+                id="feiticosescolidos">
+    
+            </select>
+        </div> 
+        <div id="descricao">ESCOLHA OS FEITIÇOS QUE VOCÊ USARÁ NA SUA JORNADA! <br></div>
+        <br>
+        <button style="border-radius: 10px;" onclick="adicionar()">Adicionar</button>
+        <button style="border-radius: 10px;" onclick="remover()">Remover</button>
+        <button style="border-radius: 10px;" onclick="salvar()">Salvar</button>
+
+    </section>
+
+
+
+    <footer>
+        <p>&copy; BrenoKarpinski</p>
+    </footer>
+    <script src="feiticos.js"></script>
+
+</body>
+
+</html>

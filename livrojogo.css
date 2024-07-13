@@ -1,0 +1,99 @@
+body{
+background-color: rgb(101, 101, 233);
+font: normal 20pt arial;
+}
+header{
+color: white;
+text-align: center;
+margin: auto;
+
+}
+
+section{
+background-color: white;
+border-radius: 10px;
+padding: 15px;
+width: 650px;
+margin: auto;
+text-align: center;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.432);
+}
+
+
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+}
+
+
+button{
+    font-size: x-large;
+    padding: 10px;
+    margin: auto;
+    margin: 5px;
+    
+}
+
+input{
+    font-size: 35px;
+}
+
+#dado{
+    float: right;
+    margin-right: 100px;
+}
+
+#imgdado{
+    width: 100px;
+    
+}
+
+.barra {
+    background-color: #c01a1a;
+    margin: auto;
+    height: 30px;
+    width: 500px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.valor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#containerlista{
+    position: absolute;
+    top: 22%;
+    left: 1%;
+    margin: auto;
+
+}
+#fescolidos{
+    position: absolute;
+    top: 15%;
+    left: 77%;
+    margin: auto
+}
+@media (max-width: 768px) {
+    section {
+        width: 90%;  /* Mais largo em telas pequenas */
+        padding: 10px;
+    }
+    .barra, .valor {
+        width: 80%;  /* Ajustar largura das barras de progresso */
+    }
+    #fescolidos, #containerlista {
+        position: static; /* Reverter para fluxo normal do documento */
+        width: 100%;
+        margin-top: 20px;
+    }
+    button, input {
+        font-size: medium; /* Tornar texto menor em dispositivos pequenos */
+    }
+}
